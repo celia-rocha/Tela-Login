@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* --------------Parte do header (imagens e logo)--------------- */
+
+.login-header {
+  background: linear-gradient(to bottom, rgb(7, 28, 59), rgba(27, 34, 127, 0));
+  border-bottom-left-radius: 30px; /* arredonda só o canto inferior esquerdo */
+  border-bottom-right-radius: 30px; /* arredonda só o canto inferior direito */
+  padding: 20px; /* ajuste conforme necessário */
+  text-align: center;
+  position: relative;
+}
+
+.brand img {
+  width: 50px;
+  margin-top: 20px;
+  position: relative;
+  top: 40px;
+}
+
+.brand h1 {
+  font-size: 70px;
+  height: 7px;
+  font-family: sans-serif;
+}
+
+.product-image {
+  padding-right: 20px;
+}
+
+/* ----------------------Parte do Input ----------------------------*/
+
+h2 {
+  font-size: 35px;
+  font-family: sans-serif;
+  padding-left: 30px; /* espaço pra esquerda */
+  margin-top: 10px;
+}
+.input-email,
+.input-password {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-email img,
+.input-password img {
+  position: absolute;
+  left: 16px; /* distância da borda do input */
+  width: 24px;
+
+  margin-top: 2px;
+  height: 24px;
+  pointer-events: none; /* para não interferir ao clicar no input */
+}
+.input-email input,
+.input-password input {
+  border: none; /* remove todas as bordas */
+  border-bottom: 1px solid #000; /* adiciona apenas a linha inferior */
+  outline: none; /* remove a borda azul ao focar */
+  margin: 0px 40px 0px 50px; /* mantém espaço para o ícone */
+  height: 45px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+/* ----------------------Parte do esqueceu a senha ----------------------------*/
+
+.form-actions {
+  text-align: right;
+  padding-right: 50px;
+  margin-top: 10px;
+}
+.form-actions a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.609);
+}
+/* ----------------------Parte dos botões ----------------------------*/
+
+.container-acess {
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.button-acess {
+  background-color: rgb(31, 68, 82);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 19px;
+  /* Ordem: padding-top, padding-right, padding-bottom, padding-left */
+  padding: 13px 140px 10px 140px;
+}
+.container-google {
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button-google {
+  display: inline-flex; /* ícone + texto lado a lado */
+  align-items: center; /* centraliza vertical */
+  gap: 10px; /* espaço entre ícone e texto */
+  background-color: rgba(170, 161, 161, 0.358);
+  color: #000000;
+  border: none;
+  border-radius: 30px;
+  font-size: 20px;
+  padding: 13px 70px 13px 80px;
+  cursor: pointer;
+}
+
+.icon-google {
+  display: flex;
+  align-items: center;
+}
+/* ----------------------Parte do OU ----------------------------*/
+
+.divider p {
+  color: rgba(40, 41, 41, 0.697);
+  text-align: center;
+  margin-top: 15px;
+  padding: 0px;
+  margin-bottom: 5px;
+}
+/* ----------------------Parte do cadastre-se ----------------------------*/
+
+.login-footer {
+  text-align: center;
+  color: #000000ab;
+  margin-top: 25px;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+
+/* Tablet */
+@media (max-width: 820px) {
+  .form-actions {
+    padding-left: 600px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .form-actions {
+    padding-left: 240px;
+  }
+}
