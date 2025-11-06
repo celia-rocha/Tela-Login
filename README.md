@@ -4,8 +4,7 @@
 
 ### Protótipo visual de interface de autenticação
 
-[![Site](https://img.shields.io/badge/🌐_Ver_Projeto-9333EA?style=for-the-badge)](https://celia-rocha.github.io/Tela-Login/)
-
+[![Site](https://img.shields.io/badge/🌐_Ver_Projeto-1E40AF?style=for-the-badge)](https://celia-rocha.github.io/Tela-Login/)
 </div>
 
 ---
