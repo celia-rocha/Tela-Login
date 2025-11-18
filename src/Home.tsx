@@ -1,4 +1,4 @@
-import "./App.css";
+import "./Home.css";
 import Sapato from "./assets/Sapato.png";
 import Logo from "./assets/logo.png";
 
