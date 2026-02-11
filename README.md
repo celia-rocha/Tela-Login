@@ -2,7 +2,7 @@
   
 # 🔐 Tela de Login
 
-### Protótipo visual de interface de autenticação
+### Interface de autenticação com React Hooks
 
 [![Site](https://img.shields.io/badge/🌐_Ver_Projeto-3B82F6?style=for-the-badge)](https://celia-rocha.github.io/Tela-Login/)
 
@@ -12,15 +12,18 @@
 
 ## 📖 Sobre o Projeto
 
-Protótipo visual de interface de autenticação, desenvolvido em React e TypeScript. O projeto simula funcionalidades de login de forma interativa e responsiva, focando na experiência do usuário.
+Interface de autenticação desenvolvida em React e TypeScript, com validação de formulário, login simulado via API mockada e componentização. Focado em boas práticas de React com Hooks.
 
 ### ✨ Destaques
 
 - ⚛️ **React + TypeScript** - Stack moderna e tipada
-- 🎨 **UI Interativa** - Feedback visual para o usuário
+- 🪝 **React Hooks** - useState para gerenciamento de estado
+- ✅ **Validação de formulário** - Email (regex) e senha com feedback visual
+- 🔄 **Loading state** - Spinner no botão simulando requisição
+- 🔐 **Login mockado** - API simulada com resposta de sucesso/erro
+- 👁️ **Toggle de senha** - Mostrar/esconder senha
+- 💾 **Lembrar-me** - Persistência de email com localStorage
 - 📱 **Responsivo** - Funciona em qualquer dispositivo
-- 🔒 **Simulação de Login** - Interface completa de autenticação
-- ✨ **Animações Sutis** - Transições suaves
 
 ---
 
@@ -38,33 +41,20 @@ Protótipo visual de interface de autenticação, desenvolvido em React e TypeSc
 
 ## 🎯 Funcionalidades
 
-- ✅ Formulário de login interativo
-- ✅ Validação de campos
-- ✅ Feedback visual de erros
-- ✅ Design moderno e responsivo
-- ✅ Simulação de autenticação
-
----
-
-## 🚀 Como Executar Localmente
-```bash
-# Clone o repositório
-git clone https://github.com/celia-rocha/Tela-Login.git
-
-# Entre na pasta
-cd Tela-Login
-
-# Instale as dependências
-npm install
-
-# Execute o projeto
-npm run dev
-```
+- ✅ Validação de email com regex
+- ✅ Validação de senha (mínimo de caracteres)
+- ✅ Mensagens de erro visuais nos campos
+- ✅ Loading com spinner no botão de login
+- ✅ Login simulado com API mockada
+- ✅ Toggle de visibilidade da senha
+- ✅ Checkbox "Lembrar-me" com localStorage
+- ✅ Componentes reutilizáveis (Input, Button)
+- ✅ Design responsivo
 
 ---
 
 <div align="center">
 
-### 💜 Desenvolvido com Dedicação e muito café!!
+### 💜 Desenvolvido com dedicação e muito café!
 
 </div>
