@@ -1,0 +1,52 @@
+.custom-button {
+  background-color: rgb(31, 68, 82);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 19px;
+  width: 350px;
+  height: 45px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px; /* Adicionado espaço entre ícone e texto */
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.custom-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Estilos específicos para o Google se necessário via className */
+.custom-button.google-btn {
+  background-color: rgba(170, 161, 161, 0.358);
+  color: #000;
+  font-size: 20px;
+  padding: 10px 70px 10px 80px;
+}
+
+/* Spinner de Loading */
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  border-top-color: #fff;
+  animation: spin 1s linear infinite;
+  display: inline-block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsividade do Botão */
+@media (max-width: 768px) {
+  .custom-button {
+    width: 85%;
+  }
+}

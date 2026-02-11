@@ -39,75 +39,6 @@ h2 {
   padding-left: 30px; /* espaço pra esquerda */
   margin-top: 10px;
 }
-.input-email,
-.input-password {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap; /* Permite que os elementos quebrem para a linha de baixo */
-  align-items: center;
-}
-
-.input-password {
-  margin-top: 20px; /* Espaçamento entre email e senha */
-}
-
-.input-email img,
-.input-password img {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 24px;
-  height: 24px;
-  pointer-events: none;
-}
-
-/* Botão de toggle de senha */
-.toggle-password {
-  position: absolute;
-  right: 50px;
-  top: 12px; /* Fixo no topo, alinhado com o input */
-  background: none;
-  border: none;
-  cursor: pointer;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  color: #666;
-  transition: color 0.3s ease;
-}
-
-.toggle-password svg {
-  width: 20px;
-  height: 20px;
-}
-
-.toggle-password:hover {
-  color: #000000bb;
-}
-.input-email input,
-.input-password input {
-  border: none; /* remove todas as bordas */
-  border-bottom: 1px solid #000; /* adiciona apenas a linha inferior */
-  outline: none; /* remove a borda azul ao focar */
-  margin: 0px 40px 0px 50px; /* mantém espaço para o ícone */
-  height: 45px;
-  width: 100%;
-  box-sizing: border-box;
-  font-size: 18px;
-}
-
-/* Mensagem de erro */
-.error-message {
-  color: #e74c3c;
-  font-size: 14px;
-  margin: 5px 0 0 50px;
-  font-family: sans-serif;
-  width: 100%;
-  flex-basis: 100%;
-  animation: fadeInSlide 0.3s ease-out; /* Animação de entrada */
-}
-
 /* ----------------------Esqueceu a senha ----------------------------*/
 
 .form-actions {
@@ -145,20 +76,6 @@ h2 {
   width: 100%;
   text-align: center;
   margin-top: 30px;
-}
-
-.button-acess {
-  background-color: rgb(31, 68, 82);
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-size: 19px;
-  width: 350px; /* Largura fixa para não mudar no loading */
-  height: 45px;  /* Altura fixa para não mudar no loading */
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
 }
 .container-google {
   width: 100%;
@@ -216,37 +133,6 @@ h2 {
   .form-actions {
     padding: 0 40px 0 50px !important; /* Mantém o mesmo recuo do input */
   }
-  
-  .button-acess {
-    width: 85%; /* Um pouco menor para não bater nas bordas */
-  }
-
-  .input-email input,
-  .input-password input {
-    margin: 0 40px 0 50px; /* Garante que mantém o espaço do ícone */
-  }
-}
-
-/* Spinner de Loading */
-.spinner {
-  width: 20px;
-  height: 20px;
-  border: 3px solid rgba(255, 255, 255, 0.3);
-  border-radius: 50%;
-  border-top-color: #fff;
-  animation: spin 1s linear infinite;
-  display: inline-block;
-}
-
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-.button-acess:disabled {
-  opacity: 0.7;
-  cursor: not-allowed;
 }
 
 /* Erro Global de Autenticação */
